@@ -14,6 +14,8 @@ allow wpa self:netlink_socket create_socket_perms;
 allow wpa self:packet_socket create_socket_perms;
 allow wpa wifi_data_file:dir create_dir_perms;
 allow wpa wifi_data_file:file create_file_perms;
+allow wpa system_data_file:file { read };
+allow wpa radio_device:chr_file { open read };
 unix_socket_send(wpa, system_wpa, system_server)
 
 binder_use(wpa)
