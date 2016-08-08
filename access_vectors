@@ -276,6 +276,21 @@ class netif
 class netlink_socket
 inherits socket
 
+class netlink_netfilter_socket
+inherits socket
+
+class netlink_generic_socket
+inherits socket
+
+class netlink_scsitransport_socket
+inherits socket
+
+class netlink_rdma_socket
+inherits socket
+
+class netlink_crypto_socket
+inherits socket
+
 class packet_socket
 inherits socket
 
@@ -393,6 +408,7 @@ class system
 	syslog_mod
 	syslog_console
 	module_request
+	module_load
 }
 
 #

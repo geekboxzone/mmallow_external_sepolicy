@@ -31,6 +31,12 @@ class rawip_socket
 class node
 class netif
 class netlink_socket
+# map with kernel
+class netlink_netfilter_socket
+class netlink_generic_socket
+class netlink_scsitransport_socket
+class netlink_rdma_socket
+class netlink_crypto_socket
 class packet_socket
 class key_socket
 class unix_stream_socket
